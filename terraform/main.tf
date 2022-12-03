@@ -56,7 +56,13 @@ resource "aws_security_group" "instance_a" {
     from_port   = 8080
     to_port     = 8080
     protocol    = "tcp"
-    cidr_blocks = ["46.10.148.153/32"]
+    cidr_blocks = [
+      "46.10.148.153/32",
+      "192.30.252.0/22",
+      "185.199.108.0/22",
+      "140.82.112.0/20",
+      "143.55.64.0/20",
+    ]
   }
 
     ingress {
