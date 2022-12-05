@@ -98,7 +98,7 @@ resource "aws_security_group" "instance_a" {
 }
 
 resource "aws_instance" "a" {
-  ami           = "ami-0e47e83ae57abdb01" # custom AMI
+  ami           = "ami-0ee3fca718372fcee" # custom AMI
   instance_type = "t3.small"
   key_name      = "devopsproject"
 
